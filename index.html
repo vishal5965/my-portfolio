@@ -1,4 +1,3 @@
-promopt
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +32,21 @@ promopt
         .section {
             padding: 2rem;
         }
-        .skills ul {
+        .skills ul, .soft-skills ul {
             list-style-type: none;
             padding: 0;
         }
-        .skills li {
+        .skills li, .soft-skills li {
             margin: 0.5rem 0;
+        }
+        .profile-pic {
+            display: block;
+            margin: 1rem auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .projects article {
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
@@ -48,6 +56,7 @@ promopt
         <nav>
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
         </nav>
     </header>
 
@@ -58,20 +67,47 @@ promopt
 
     <section id="about" class="section">
         <h2>About Me</h2>
+        <img src="c:\Users\visha\OneDrive\Desktop\IMG_5082.jpg" alt="Profile Photo" class="profile-pic">
         <p>I am ambitious and driven. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness.</p>
     </section>
 
-    <section id="skills" class="section skills">
+    <section id="skills" class="section">
         <h2>Skills</h2>
+        <h3>Technical Skills</h3>
         <ul>
             <li>Data Analysis</li>
             <li>Machine Learning</li>
             <li>Python Programming</li>
             <li>Data Visualization</li>
             <li>SQL</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
             <li>Customer Service</li>
-
+            <li>Problem-Solving</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
         </ul>
     </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+
+        <article>
+            <h3>Customer Churn Analysis</h3>
+            <p>Analyzed telecom customer data to predict churn using logistic regression and decision trees. Managed class imbalance with SMOTE and achieved a 15% improvement in prediction accuracy.</p>
+        </article>
+
+        <article>
+            <h3>Instacart Product Reordering Prediction</h3>
+            <p>Performed EDA and used XGBoost to predict product reorders in grocery shopping data. Enhanced the F1 score with feature engineering and cross-validation.</p>
+        </article>
+
+        <article>
+            <h3>Web Traffic Forecasting</h3>
+            <p>Forecasted website visits using ARIMA and Prophet models. Addressed missing values and seasonality. Reduced forecasting error below benchmark levels.</p>
+        </article>
+    </section>
 </body>
-</html> 
+</html>
